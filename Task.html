@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Management</title>
+  <link rel="stylesheet" type="text/css" href="Task.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <div class="create-task">Create Task</div>
+      <form id="task-form">
+        <b>Title</b>
+        <input type="text" id="task-title" class="title" placeholder="Enter task title" required>
+        <b>Description</b>
+        <textarea id="task-description" class="description" placeholder="Enter task description" required></textarea>
+        <b>Date</b>
+        <input type="date" id="created-date" required>
+        <button type="submit" class="submit" id="create-button">Submit</button>
+      </form>
+    </div>
+    <div class="task-list-container">
+      <h2 class="Task-List">Task List</h2>
+   
+    </div>
+    <ul   id="task-list"></ul>
+  </div>
+
+  <script src="Task.js"></script>
+</body>
+</html>
